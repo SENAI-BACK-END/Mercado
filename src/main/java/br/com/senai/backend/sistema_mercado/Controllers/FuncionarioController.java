@@ -25,7 +25,7 @@ public class FuncionarioController {
 }
 
     @GetMapping("/recuperar-po-id/{id}")
-    public Funcionario recuperarPorId(@PathVaariable Integer id) {
+    public Funcionario recuperarPorId(@PathVariable Integer id) {
         return funcionarioService.recuperarPorId(id);
     }
 }
