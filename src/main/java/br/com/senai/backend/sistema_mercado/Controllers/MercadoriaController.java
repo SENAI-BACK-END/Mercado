@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import.br.com.senai.backend.sistema_mercado.models.Mercadoria;
-import.br.com.senai.backend.sistema_mercado.services.MercadoriaService;
+import br.com.senai.backend.sistema_mercado.models.Mercadoria;
+import br.com.senai.backend.sistema_mercado.services.MercadoriaService;
 
 
 @RestController
