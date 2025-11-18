@@ -1,4 +1,4 @@
-package br.com.senai.backend.mercado.controllers;
+package br.com.senai.backend.sistema_mercado.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestBodu;
 import org.springframework.web.bind.annotation.RequestController;
 
-import.br.com.senai.backend.mercado.models.Funcionario;
-import.br.com.senai.backend.mercado.services.FuncionarioService;
+import.br.com.senai.backend.sistema_mercado.models.Funcionario;
+import.br.com.senai.backend.sistema_mercado.services.FuncionarioService;
 
 
 @RestController
