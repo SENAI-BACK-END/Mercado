@@ -18,6 +18,8 @@ public class Mercadoria {
     private Integer id;
     @Column(name = "nome")
     private String nome;
+    @Column(name= "preco")
+    private double preco;
     @Column(name = "quantidade")
     private String quantidade;
     @Column(name = "categoria")
@@ -26,10 +28,11 @@ public class Mercadoria {
     public Mercadoria() {
     }
 
-    public Mercadoria(String categoria, Integer id, String nome, String quantidade) {
+    public Mercadoria(String categoria, Integer id, String nome, double preco, String quantidade) {
         this.categoria = categoria;
         this.id = id;
         this.nome = nome;
+        this.preco = preco;
         this.quantidade = quantidade;
     }
 
@@ -49,6 +52,14 @@ public class Mercadoria {
         this.nome = nome;
     }
 
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
     public String getQuantidade() {
         return quantidade;
     }
@@ -65,4 +76,5 @@ public class Mercadoria {
         this.categoria = categoria;
     }
 
+    
 }
