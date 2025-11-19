@@ -28,4 +28,22 @@ public class MercadoriaController {
     public Mercadoria recuperarPorId(@PathVariable Integer id) {
         return mercadoriaService.recuperarPorId(id);
     }
+
+    @GetMapping("/listar-todos")
+    public List<Mercadoria> listarTodos(){
+        return mercadoriaService.listarTodos();
+    }
+
+    @PutMapping("/atualizar/{id}")
+    public Mercadoria atualizar(@PathVariable Integer id, @RequestBody Mercadoria mercadoria) {
+        return mercadoriaService.atualizar(id, mercadoria);
+    }
+
+    @DeleteMapping("/deletar/{id}")
+    public String deletarPorId(@PathVariable Integer id) {
+        if (mercadoriaService.removerPorId(id)) {
+            return "mercadoria removida com sucesso";
+        }
+        return "Falha ao remover a mercadoria";
+    }
 }
